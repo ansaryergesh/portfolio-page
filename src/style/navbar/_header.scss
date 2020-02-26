@@ -18,8 +18,8 @@
 .nav-toggle {
     @include user-select;
     cursor: pointer;
-    height: 5 * $nav-toggle-bar-height;
-    left: 2rem;
+    height: $nav-toggle-bar-height;
+    left: .8%;
     position: fixed;
     top: 2rem;
     width: $nav-toggle-bar-width;
@@ -79,11 +79,11 @@
     cursor: pointer;
     font-size: 2rem;
     height: 100vh;
-    left: -$nav-width;
+    left: -$nav-width*1.2;
     padding: 6rem 2rem 2rem 2rem;
     position: fixed;
     top: 0;
-    width: $nav-width;
+    width: $nav-width*1.2;
     z-index: $z-nav;
 
     &.expanded {
@@ -91,10 +91,18 @@
     }
 
     ul {
-        @include center-vertically;
         list-style: none;
-        margin: 0;
+        margin: auto;
         padding: 0;
+
+        li {
+            margin-top: 50px;
+            margin-bottom: 30vh;
+
+            &:hover {
+                color: rgb(228, 74, 74);
+            }
+        }
     }
 }
 
@@ -209,6 +217,11 @@ main {
 }
 
 @media only screen and (min-width:300px) and (max-width: 655px) {
+
+    .nav-toggle {
+        left: 2%
+    }
+
     .heading-primary {
         border: none;
 
