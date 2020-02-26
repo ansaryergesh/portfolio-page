@@ -95,7 +95,8 @@
         margin: auto;
         padding: 0;
 
-        li {
+        li,
+        a {
             margin-top: 50px;
             margin-bottom: 30vh;
 
@@ -170,7 +171,7 @@ main {
 
 .main-text-box {
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 31%;
     transform: translate(-60%, -60%);
     user-select: none;
