@@ -1,6 +1,6 @@
 .projects {
     margin-top: 15px;
-    background-image: linear-gradient(to right bottom, rgb(227, 228, 228), rgba(212, 212, 212, 0.541)), url("https://i.pinimg.com/originals/b1/d4/3c/b1d43cc679ee4cfdb392ebc8cc59e354.jpg");
+    background-image: linear-gradient(to right bottom, rgb(227, 228, 228), rgba(4, 19, 11, 0.767)), url("https://i.pinimg.com/originals/b1/d4/3c/b1d43cc679ee4cfdb392ebc8cc59e354.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -29,11 +29,48 @@
     border-bottom: 3px solid blue;
 }
 
+.text {
+    font-size: 18px;
+    text-align: justify;
+
+    .textHead {
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        font-family: "Ubuntu";
+    }
+}
+
+.buttons {
+    position: relative;
+    margin-top: 55px;
+
+    button {
+        border-radius: 15px;
+        cursor: pointer;
+        letter-spacing: 1.5px;
+        font-size: 20px;
+        padding: 8px 20px;
+        border: none;
+        color: black;
+        margin-right: 7px;
+        background-color: rgba(245, 240, 240, 0.562);
+
+        &:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+            color: white;
+            background-color: rgb(255, 6, 6);
+        }
+    }
+}
+
+
+
 .image {
-
-
     img:first-child {
         width: 100%;
         border-radius: 15px;
+        margin-bottom: 20px;
     }
 }
