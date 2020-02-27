@@ -164,27 +164,16 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .info {
-        height: 100vh;
-    }
-
-    .aboutMe {
-        font-size: 16px;
-    }
-
-    .skills {
-        margin-bottom: 0;
-        width: 90%;
-
-        .skill {
-            padding: 10px;
-            font-size: 16px;
-        }
-    }
-}
 
 @media only screen and (max-width: 400px) {
+    .projectHeader {
+        margin-top: 100px;
+    }
+
+    #info {
+        margin-top: 20px
+    }
+
     .buttons {
         display: flex;
         flex-direction: column;
@@ -216,6 +205,27 @@
             font-weight: 600;
             letter-spacing: 1px;
             font-family: "Ubuntu";
+        }
+    }
+}
+
+
+@media only screen and (min-width:400px) and (max-width: 768px) {
+    .info {
+        height: 100vh;
+    }
+
+    .aboutMe {
+        font-size: 16px;
+    }
+
+    .skills {
+        margin-bottom: 0;
+        width: 90%;
+
+        .skill {
+            padding: 10px;
+            font-size: 16px;
         }
     }
 }
