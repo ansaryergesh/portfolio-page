@@ -5,7 +5,7 @@
     background-size: cover;
     background-position: center;
     animation: gradient 10s ease infinite;
-    background: linear-gradient(-45deg, #99dab6, #032c148a, #b17d7d, #0ea6e2), url("https://wallpapercave.com/wp/wp3067541.png");
+    background: linear-gradient(-45deg, #99dab6, #5DB6E8, rgba(255, 143, 102, 0.568), #9373FF), url("https://wallpapercave.com/wp/wp3067541.png");
     ;
     background-size: 400% 400%;
     color: rgb(0, 0, 0);
@@ -16,7 +16,8 @@
 .block {
     border-radius: 15px;
     padding: 25px 15px;
-    background-color: rgba(76, 150, 140, 0.589);
+    // background-color: rgba(76, 150, 140, 0.589);
+    background-color: rgba(89, 179, 129, 0.726);
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.747);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -32,7 +33,7 @@
     letter-spacing: 1.8px;
     margin: auto;
     margin-bottom: 35px;
-    border-bottom: 5px solid blue;
+    border-bottom: 5px solid #218DCC;
 }
 
 .aboutMe {
@@ -43,7 +44,7 @@
 }
 
 .info {
-    height: 105vh;
+    height: 85vh;
 }
 
 .skills {
@@ -55,7 +56,7 @@
 
     .skill {
         font-size: 19px;
-        background-color: rgba(94, 167, 216, 0.836);
+        background-color: rgba(255, 216, 204, 0.822);
         border: .8px solid rgb(112, 109, 109);
         color: black;
         border-radius: 15px;
@@ -72,7 +73,7 @@
 
 
 .resume {
-    background-color: rgb(94, 167, 216) !important;
+    background-color: rgba(94, 167, 216, 0.432);
     font-weight: 600;
     ;
 }
@@ -230,7 +231,7 @@
 
 @media only screen and (min-width:400px) and (max-width: 768px) {
     .info {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .aboutMe {
