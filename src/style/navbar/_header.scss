@@ -217,7 +217,23 @@ main {
     }
 }
 
-@media only screen and (min-width:300px) and (max-width: 655px) {
+@media only screen and (max-width: 340px) {
+    .heading-primary {
+        border: none;
+
+        &--main {
+            font-size: 3rem;
+            letter-spacing: .3rem;
+        }
+
+        &--sub {
+            font-size: 1rem;
+            letter-spacing: 15px;
+        }
+    }
+}
+
+@media only screen and (min-width:350px) and (max-width: 655px) {
 
     .nav-toggle {
         left: 2%
