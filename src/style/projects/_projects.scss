@@ -166,6 +166,10 @@
 
 
 @media only screen and (max-width: 400px) {
+    .tech {
+        width: 240px !important;
+    }
+
     .projectHeader {
         margin-top: 100px;
     }
