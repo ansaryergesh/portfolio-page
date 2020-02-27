@@ -36,6 +36,7 @@ html {
     background: $html-background;
     color: white;
     font: normal 10px/1.42857 $html-font;
+    scroll-behavior: smooth;
 }
 
 body {
