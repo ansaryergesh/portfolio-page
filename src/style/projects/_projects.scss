@@ -45,7 +45,7 @@
     position: relative;
     margin-top: 55px;
 
-    button {
+    a {
         border-radius: 15px;
         cursor: pointer;
         letter-spacing: 1.5px;
@@ -57,7 +57,7 @@
         background-color: rgba(245, 240, 240, 0.562);
 
         &:hover {
-            transform: translateY(-1px);
+            text-decoration: none;
             box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
             color: white;
             background-color: rgb(255, 6, 6);
@@ -72,5 +72,32 @@
         width: 100%;
         border-radius: 15px;
         margin-bottom: 20px;
+
+        &:hover {
+            opacity: .85;
+        }
     }
+}
+
+.tools {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(2, 4, 34);
+    font-family: "Muli";
+    font-size: 15px;
+    width: 100%;
+
+    .tool {
+        margin-right: 5%;
+        padding: 9px;
+        border: 3px solid rgb(148, 20, 3);
+        border-radius: 15px;
+        letter-spacing: 1.2px;
+        margin-bottom: 10px;
+    }
+}
+
+.desc {
+    color: rgba(0, 0, 0, 0.87);
 }
