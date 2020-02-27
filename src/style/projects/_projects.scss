@@ -1,9 +1,13 @@
 .projects {
     margin-top: 15px;
-    background-image: linear-gradient(to right bottom, rgba(145, 231, 231, 0.603), rgba(4, 19, 11, 0.767)), url("https://i.pinimg.com/originals/b1/d4/3c/b1d43cc679ee4cfdb392ebc8cc59e354.jpg");
+    // background-image: linear-gradient(to right bottom, rgba(145, 231, 231, 0.603), rgba(4, 19, 11, 0.767)), url("https://i.pinimg.com/originals/b1/d4/3c/b1d43cc679ee4cfdb392ebc8cc59e354.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    animation: gradient 10s ease infinite;
+    background: linear-gradient(-45deg, #99dab6, #032c148a, #b17d7d, #0ea6e2), url("https://wallpapercave.com/wp/wp3067541.png");
+    ;
+    background-size: 400% 400%;
     color: rgb(0, 0, 0);
     padding: 35px;
     margin: auto;
@@ -27,7 +31,7 @@
     width: 200px;
     letter-spacing: 1.8px;
     margin: auto;
-    margin-bottom: 65px;
+    margin-bottom: 35px;
     border-bottom: 5px solid blue;
 }
 
@@ -39,11 +43,7 @@
 }
 
 .info {
-    height: 100vh;
-    animation: gradient 10s ease infinite;
-    background: linear-gradient(-45deg, #99dab6, #bee2cd8a, #11bb9f, #eeeeee), url("https://i.pinimg.com/originals/b1/d4/3c/b1d43cc679ee4cfdb392ebc8cc59e354.jpg");
-    ;
-    background-size: 400% 400%;
+    height: 105vh;
 }
 
 .skills {
@@ -55,13 +55,26 @@
 
     .skill {
         font-size: 15px;
-        background-color: rgb(28, 65, 90);
+        background-color: rgba(94, 167, 216, 0.836);
+        border: .8px solid rgb(112, 109, 109);
         color: black;
         border-radius: 15px;
         padding: 30px;
         margin-left: 15px;
         margin-bottom: 15px;
+
+
+        &:hover {
+            opacity: .85;
+        }
     }
+}
+
+
+.resume {
+    background-color: rgb(94, 167, 216) !important;
+    font-weight: 600;
+    ;
 }
 
 .text {
@@ -150,3 +163,26 @@
         background-position: 0% 50%;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .info {
+        height: 100vh;
+    }
+
+    .aboutMe {
+        font-size: 16px;
+    }
+
+    .skills {
+        margin-bottom: 0;
+        width: 90%;
+
+        .skill {
+            padding: 10px;
+            font-size: 16px;
+        }
+    }
+}
+
+
+@media only screen and (min-width:300px) and (max-width: 655px) {}
