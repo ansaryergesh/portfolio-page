@@ -3,7 +3,7 @@
 
 /* colors */
 $grey: rgb(63, 61, 61);
-$black: black;
+$black: rgb(255, 255, 255);
 
 /* variables */
 $html-background: $black;
@@ -25,6 +25,7 @@ $z-nav: 1;
 * {
     @include box-sizing;
     @include text-size-adjust;
+    user-select: none;
 
     &:focus {
         outline: none;

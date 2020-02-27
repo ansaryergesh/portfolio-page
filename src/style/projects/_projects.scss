@@ -1,0 +1,39 @@
+.projects {
+    margin-top: 15px;
+    background-image: linear-gradient(to right bottom, rgb(227, 228, 228), rgba(212, 212, 212, 0.541)), url("https://i.pinimg.com/originals/b1/d4/3c/b1d43cc679ee4cfdb392ebc8cc59e354.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    padding: 35px;
+    margin: auto;
+}
+
+.block {
+    border-radius: 15px;
+    padding: 25px 15px;
+    background-color: rgba(76, 150, 140, 0.589);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.747);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.projectHeader {
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    margin: auto;
+    margin-bottom: 65px;
+    border-bottom: 3px solid blue;
+}
+
+.image {
+
+
+    img:first-child {
+        width: 100%;
+        border-radius: 15px;
+    }
+}
