@@ -134,11 +134,15 @@ main {
 
 .main-header {
     height: 100vh;
-    background-image: linear-gradient(to right bottom, rgba(32, 31, 31, 0.555), rgba(0, 0, 0, 0.473)), url("https://raw.githubusercontent.com/ansaryergesh/portfolio-page/master/src/img/ansar.jpg");
+    background-image: linear-gradient(to right bottom, rgba(2, 2, 2, 0.329), rgba(0, 0, 0, 0.568)), url("https://raw.githubusercontent.com/ansaryergesh/portfolio-page/master/src/img/ansar2.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    // background-size: cover;
+    ;
+    background-position: 90% 70%;
     position: relative;
+    background-color: black;
+    // transform: scale(1.2);
 }
 
 .heading-primary {
@@ -201,6 +205,17 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
+    .main-header {
+        background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.568)), url("https://raw.githubusercontent.com/ansaryergesh/portfolio-page/master/src/img/ansar2.jpg");
+        background-repeat: no-repeat;
+        background-size: 80%;
+        // background-size: cover;
+        ;
+        background-position: 50% 20%;
+        position: relative;
+        background-color: black;
+    }
+
     .main-text-box {
         margin: 0;
         position: absolute;

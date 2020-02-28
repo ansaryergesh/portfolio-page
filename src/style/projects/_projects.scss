@@ -13,6 +13,10 @@
     margin: auto;
 }
 
+#projects {
+    clear: both;
+}
+
 .block {
     border-radius: 15px;
     padding: 25px 15px;
@@ -43,9 +47,7 @@
     margin-bottom: 80px;
 }
 
-.info {
-    height: 85vh;
-}
+.info {}
 
 .skills {
     margin: auto;
@@ -231,7 +233,7 @@
 
 @media only screen and (min-width:400px) and (max-width: 768px) {
     .info {
-        height: 100vh;
+        // height: 100vh;
     }
 
     .aboutMe {
