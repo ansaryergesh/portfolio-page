@@ -1,10 +1,13 @@
 .demo a {
     position: absolute;
-    left: 50%;
     z-index: 2;
     display: inline-block;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     color: #fff;
     font: normal 200 10px/1 'Josefin Sans', sans-serif;
     letter-spacing: .1em;

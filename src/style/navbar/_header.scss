@@ -184,14 +184,14 @@ main {
 .btn-contact {
     cursor: pointer;
     outline: none;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     border-radius: 15px;
     background-color: transparent;
     color: rgb(253, 180, 153);
     padding: 0.3em 1.1em;
     text-align: center;
     font-weight: normal;
-    transition: box-shadow 300ms ease-in-out, color 300ms;
+    transition: box-shadow 400ms ease-in-out, color 400ms;
     border: 2px solid rgb(253, 252, 252);
 
     &:hover {
@@ -208,7 +208,7 @@ main {
     .main-header {
         background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.568)), url("https://raw.githubusercontent.com/ansaryergesh/portfolio-page/master/src/img/ansar2.jpg");
         background-repeat: no-repeat;
-        background-size: 80%;
+        background-size: 60%;
         // background-size: cover;
         ;
         background-position: 50% 20%;
@@ -219,52 +219,73 @@ main {
     .main-text-box {
         margin: 0;
         position: absolute;
-        top: 50%;
+        top: 55%;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-align: center;
+        margin-bottom: 50px;
     }
 
     .heading-primary {
         border: none;
-
-    }
-}
-
-@media only screen and (max-width: 340px) {
-    .heading-primary {
-        border: none;
+        margin-bottom: 120px;
 
         &--main {
             font-size: 3rem;
-            letter-spacing: .3rem;
-        }
-
-        &--sub {
-            font-size: 1rem;
-            letter-spacing: 15px;
-        }
-    }
-}
-
-@media only screen and (min-width:350px) and (max-width: 655px) {
-
-    .nav-toggle {
-        left: 2%
-    }
-
-    .heading-primary {
-        border: none;
-
-        &--main {
-            font-size: 3rem;
-            letter-spacing: 1rem;
+            letter-spacing: .5rem;
         }
 
         &--sub {
             font-size: 1.5rem;
-            letter-spacing: 8px;
+            letter-spacing: 10px;
+            opacity: .6;
         }
     }
+
+
+    .btn-contact {
+        font-size: 2.2rem !important;
+        padding: 10px 15px;
+        border-radius: 25px;
+
+        &:hover {}
+    }
 }
+
+// @media only screen and (max-width: 340px) {
+//     .heading-primary {
+//         border: none;
+
+// &--main {
+//     font-size: 3rem;
+//     letter-spacing: .3rem;
+// }
+
+// &--sub {
+//     font-size: 1rem;
+//     letter-spacing: 15px;
+// }
+//     }
+// }
+
+// @media only screen and (min-width:350px) and (max-width: 655px) {
+
+//     .nav-toggle {
+//         left: 2%
+//     }
+
+//     .heading-primary {
+//         border: none;
+
+//         &--main {
+//             font-size: 3rem;
+//             letter-spacing: 1rem;
+//         }
+
+//         &--sub {
+//             font-size: 1.5rem;
+//             letter-spacing: 8px;
+//         }
+//     }
+// }
