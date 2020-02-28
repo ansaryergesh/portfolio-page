@@ -213,7 +213,7 @@ main {
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 }
 
@@ -222,8 +222,6 @@ main {
         background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.568)), url("https://raw.githubusercontent.com/ansaryergesh/portfolio-page/master/src/img/pr.jpg");
         background-repeat: no-repeat;
         background-size: 60%;
-        // background-size: cover;
-        ;
         background-position: 50% 20%;
         position: relative;
         background-color: black;
