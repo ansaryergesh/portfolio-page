@@ -204,6 +204,19 @@ main {
     }
 }
 
+@media only screen and (min-width:300px) and (max-width:500px) {
+    .main-text-box {
+        margin: 0;
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .main-header {
         background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.568)), url("https://raw.githubusercontent.com/ansaryergesh/portfolio-page/master/src/img/ansar2.jpg");
@@ -219,7 +232,7 @@ main {
     .main-text-box {
         margin: 0;
         position: absolute;
-        top: 55%;
+        top: 63%;
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -251,7 +264,29 @@ main {
 
         &:hover {}
     }
+
+    .nav-toggle {
+        left: 12px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        .nav-toggle-bar {
+            margin-top: 0;
+        }
+
+        .nav-toggle-bar::after {
+            margin-top: 2.5 * $nav-toggle-bar-height;
+        }
+
+        .nav-toggle-bar::before {
+            margin-top: -2.5 * $nav-toggle-bar-height;
+        }
+    }
 }
+
+
 
 // @media only screen and (max-width: 340px) {
 //     .heading-primary {
