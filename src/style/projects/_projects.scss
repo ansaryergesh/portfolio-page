@@ -1,6 +1,5 @@
 .projects {
     margin-top: 15px;
-    // background-image: linear-gradient(to right bottom, rgba(145, 231, 231, 0.603), rgba(4, 19, 11, 0.767)), url("https://i.pinimg.com/originals/b1/d4/3c/b1d43cc679ee4cfdb392ebc8cc59e354.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -20,8 +19,7 @@
 .block {
     border-radius: 15px;
     padding: 25px 15px;
-    // background-color: rgba(76, 150, 140, 0.589);
-    background-color: rgba(89, 179, 129, 0.726);
+    background-color: rgba(255, 255, 255, 0.23);
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.747);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -43,7 +41,6 @@
 .aboutMe {
     font-size: 22px;
     text-align: center;
-    font-family: "Mali";
     margin-bottom: 80px;
 }
 
@@ -90,7 +87,6 @@
         font-size: 30px;
         font-weight: 600;
         letter-spacing: 1.5px;
-        font-family: "Ubuntu";
     }
 }
 
@@ -137,7 +133,6 @@
     display: flex;
     flex-wrap: wrap;
     color: rgb(2, 4, 34);
-    font-family: "Muli";
     font-size: 15px;
     width: 100%;
 
@@ -183,10 +178,6 @@
         margin-top: 20px
     }
 
-    .info {
-        // margin-bottom: 50px;
-    }
-
     .buttons {
         display: flex;
         flex-direction: column;
@@ -227,16 +218,12 @@
             font-size: 21px;
             font-weight: 600;
             letter-spacing: 1px;
-            font-family: "Ubuntu";
         }
     }
 }
 
 
 @media only screen and (min-width:400px) and (max-width: 768px) {
-    .info {
-        // height: 100vh;
-    }
 
     .aboutMe {
         font-size: 16px;
