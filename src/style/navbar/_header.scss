@@ -1,290 +1,295 @@
 @keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
 
-    80% {
-        transform: translateX(-10px);
-    }
+  80% {
+    transform: translateX(-10px);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
-
 .nav-toggle {
-    @include user-select;
-    cursor: pointer;
+  @include user-select;
+  cursor: pointer;
+  height: $nav-toggle-bar-height;
+  left: 0.8%;
+  position: fixed;
+  top: 2rem;
+  width: $nav-toggle-bar-width;
+  z-index: $z-nav-toggle;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  .nav-toggle-bar,
+  .nav-toggle-bar::after,
+  .nav-toggle-bar::before {
+    @include center-vertically;
+    @include transition(all 0.5s ease);
+    background: $nav-toggle-bar-color;
+    content: "";
     height: $nav-toggle-bar-height;
-    left: .8%;
-    position: fixed;
-    top: 2rem;
-    width: $nav-toggle-bar-width;
-    z-index: $z-nav-toggle;
+    width: 100%;
+  }
 
-    &:hover {
-        opacity: 0.8;
-    }
+  .nav-toggle-bar {
+    margin-top: 0;
+  }
 
-    .nav-toggle-bar,
-    .nav-toggle-bar::after,
-    .nav-toggle-bar::before {
-        @include center-vertically;
-        @include transition(all 0.5s ease);
-        background: $nav-toggle-bar-color;
-        content: '';
-        height: $nav-toggle-bar-height;
-        width: 100%;
-    }
+  .nav-toggle-bar::after {
+    margin-top: 2 * $nav-toggle-bar-height;
+  }
 
-    .nav-toggle-bar {
-        margin-top: 0;
-    }
+  .nav-toggle-bar::before {
+    margin-top: -2 * $nav-toggle-bar-height;
+  }
 
-    .nav-toggle-bar::after {
-        margin-top: 2 * $nav-toggle-bar-height;
-    }
+  &.expanded .nav-toggle-bar {
+    background: transparent;
+  }
 
-    .nav-toggle-bar::before {
-        margin-top: -2 * $nav-toggle-bar-height;
-    }
+  &.expanded .nav-toggle-bar::after,
+  &.expanded .nav-toggle-bar::before {
+    background: $nav-color;
+    margin-top: 0;
+  }
 
-    &.expanded .nav-toggle-bar {
-        background: transparent;
-    }
+  &.expanded .nav-toggle-bar::after {
+    @include transform(rotate(45deg));
+  }
 
-    &.expanded .nav-toggle-bar::after,
-    &.expanded .nav-toggle-bar::before {
-        background: $nav-color;
-        margin-top: 0;
-    }
-
-    &.expanded .nav-toggle-bar::after {
-        @include transform(rotate(45deg));
-    }
-
-    &.expanded .nav-toggle-bar::before {
-        @include transform(rotate(-45deg));
-    }
+  &.expanded .nav-toggle-bar::before {
+    @include transform(rotate(-45deg));
+  }
 }
 
 /* nav */
 .nav {
-    @include transition(left 0.5s ease);
-    background: $nav-background;
-    color: $nav-color;
-    cursor: pointer;
-    font-size: 2rem;
-    height: 100vh;
-    left: -$nav-width*1.2;
-    padding: 6rem 2rem 2rem 2rem;
-    position: fixed;
-    top: 0;
-    width: $nav-width*1.2;
-    z-index: $z-nav;
+  @include transition(left 0.5s ease);
+  background: $nav-background;
+  color: $nav-color;
+  cursor: pointer;
+  font-size: 2rem;
+  height: 100vh;
+  left: -$nav-width * 1.2;
+  padding: 6rem 2rem 2rem 2rem;
+  position: fixed;
+  top: 0;
+  width: $nav-width * 1.2;
+  z-index: $z-nav;
 
-    &.expanded {
-        left: 0;
+  &.expanded {
+    left: 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+
+    li,
+    a {
+      margin-top: 50px;
+      margin-bottom: 30vh;
+
+      &:hover {
+        color: rgb(224, 46, 46);
+      }
     }
-
-    ul {
-        list-style: none;
-        margin: auto;
-        padding: 0;
-
-        li,
-        a {
-            margin-top: 50px;
-            margin-bottom: 30vh;
-
-            &:hover {
-                color: rgb(224, 46, 46);
-            }
-        }
-    }
+  }
 }
 
 header {
-    padding: 10px;
+  padding: 10px;
 }
 
 .header-nav {
-    padding: 0 250px;
-    margin-top: 25px;
+  padding: 0 250px;
+  margin-top: 25px;
 
-    .logo {
-        float: left;
-        font-size: 10px;
-        letter-spacing: 5px;
-        text-transform: uppercase;
+  .logo {
+    float: left;
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
 
-    }
-
-    .img-logo {
-        width: 55%;
-    }
+  .img-logo {
+    width: 55%;
+  }
 }
 
 main {
-    padding: 100px
+  padding: 100px;
 }
 
 .main-header {
-    height: 100vh;
-    background-image: linear-gradient(to right bottom, rgba(2, 2, 2, 0.329), rgba(0, 0, 0, 0.568)), url("https://raw.githubusercontent.com/ansaryergesh/portfolio-page/master/src/img/ansar2.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    // background-size: cover;
-    ;
-    background-position: 90% 70%;
-    position: relative;
-    background-color: black;
-    // transform: scale(1.2);
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(2, 2, 2, 0.329),
+      rgba(0, 0, 0, 0.568)
+    ),
+    url("https://raw.githubusercontent.com/ansaryergesh/portfolio-page/master/src/img/pr.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 90% 70%;
+  position: relative;
+  background-color: black;
+  &:hover {
+    background-image: url("https://raw.githubusercontent.com/ansaryergesh/portfolio-page/master/src/img/ansarBlack.jpeg");
+  }
 }
 
 .heading-primary {
-    color: white;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: 6rem;
-    border-left: 3px solid white;
+  color: white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+  border-left: 3px solid white;
 
-    &--main {
-        margin-left: 12px;
-        font-size: 5rem;
-        font-weight: 400;
-        letter-spacing: 1.5rem;
-        animation-name: moveInLeft;
-        animation-duration: 7s;
-        animation-timing-function: ease-out;
-    }
+  &--main {
+    margin-left: 12px;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 1.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 7s;
+    animation-timing-function: ease-out;
+  }
 
-    &--sub {
-        margin-left: 12px;
-        display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: 11px;
-        animation: moveInRight 1s ease-out;
-    }
-
+  &--sub {
+    margin-left: 12px;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 11px;
+    animation: moveInRight 1s ease-out;
+  }
 }
 
 .main-text-box {
-    position: absolute;
-    top: 55%;
-    left: 31%;
-    transform: translate(-60%, -60%);
-    user-select: none;
+  position: absolute;
+  top: 55%;
+  left: 31%;
+  transform: translate(-60%, -60%);
+  user-select: none;
 }
 
 .btn-contact {
-    cursor: pointer;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.8rem;
+  border-radius: 15px;
+  background-color: transparent;
+  color: rgb(253, 180, 153);
+  padding: 0.3em 1.1em;
+  text-align: center;
+  font-weight: normal;
+  transition: box-shadow 400ms ease-in-out, color 400ms;
+  border: 2px solid rgb(253, 252, 252);
+
+  &:hover {
+    color: white;
+    box-shadow: 0 0 40px 40px rgb(216, 14, 14) inset;
+  }
+
+  &:focus {
     outline: none;
-    font-size: 1.8rem;
-    border-radius: 15px;
-    background-color: transparent;
-    color: rgb(253, 180, 153);
-    padding: 0.3em 1.1em;
-    text-align: center;
-    font-weight: normal;
-    transition: box-shadow 400ms ease-in-out, color 400ms;
-    border: 2px solid rgb(253, 252, 252);
-
-    &:hover {
-        color: white;
-        box-shadow: 0 0 40px 40px rgb(216, 14, 14) inset;
-    }
-
-    &:focus {
-        outline: none;
-    }
+  }
 }
 
-@media only screen and (min-width:300px) and (max-width:500px) {
-    .main-text-box {
-        margin: 0;
-        position: absolute;
-        top: 58%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-        margin-bottom: 30px;
-    }
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  .main-text-box {
+    margin: 0;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .main-header {
-        background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.568)), url("https://raw.githubusercontent.com/ansaryergesh/portfolio-page/master/src/img/pr.jpg");
-        background-repeat: no-repeat;
-        background-size: 60%;
-        background-position: 50% 20%;
-        position: relative;
-        background-color: black;
+  .main-header {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.329),
+        rgba(0, 0, 0, 0.568)
+      ),
+      url("https://raw.githubusercontent.com/ansaryergesh/portfolio-page/master/src/img/pr.jpg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 50% 20%;
+    position: relative;
+    background-color: black;
+  }
+
+  .main-text-box {
+    margin: 0;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .heading-primary {
+    border: none;
+    margin-bottom: 120px;
+
+    &--main {
+      font-size: 3rem;
+      letter-spacing: 0.5rem;
     }
 
-    .main-text-box {
-        margin: 0;
-        position: absolute;
-        top: 63%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-        margin-bottom: 50px;
+    &--sub {
+      font-size: 1.5rem;
+      letter-spacing: 10px;
+      opacity: 0.6;
+    }
+  }
+
+  .btn-contact {
+    font-size: 2.2rem !important;
+    padding: 10px 15px;
+    border-radius: 25px;
+
+    &:hover {
+    }
+  }
+
+  .nav-toggle {
+    left: 12px;
+
+    &:hover {
+      opacity: 0.8;
     }
 
-    .heading-primary {
-        border: none;
-        margin-bottom: 120px;
-
-        &--main {
-            font-size: 3rem;
-            letter-spacing: .5rem;
-        }
-
-        &--sub {
-            font-size: 1.5rem;
-            letter-spacing: 10px;
-            opacity: .6;
-        }
+    .nav-toggle-bar {
+      margin-top: 0;
     }
 
-
-    .btn-contact {
-        font-size: 2.2rem !important;
-        padding: 10px 15px;
-        border-radius: 25px;
-
-        &:hover {}
+    .nav-toggle-bar::after {
+      margin-top: 2.5 * $nav-toggle-bar-height;
     }
 
-    .nav-toggle {
-        left: 12px;
-
-        &:hover {
-            opacity: 0.8;
-        }
-
-        .nav-toggle-bar {
-            margin-top: 0;
-        }
-
-        .nav-toggle-bar::after {
-            margin-top: 2.5 * $nav-toggle-bar-height;
-        }
-
-        .nav-toggle-bar::before {
-            margin-top: -2.5 * $nav-toggle-bar-height;
-        }
+    .nav-toggle-bar::before {
+      margin-top: -2.5 * $nav-toggle-bar-height;
     }
+  }
 }
-
-
 
 // @media only screen and (max-width: 340px) {
 //     .heading-primary {
