@@ -9,6 +9,9 @@ Portfolio page where included my skills and some of my projects.
 - JavaScript ES6
 - Webpack
 
+## Screenshot
+![screenshot](https://sun1.tele2-kz-shymkent.userapi.com/6VsiUeyDM5o8Yw-DbC4-g2dFMiTzLh_uiqSH2Q/suudTcSlp5k.jpg)
+
 ## Live Demo
 
 [Live Demo Link](https://ansaryergesh.com)
